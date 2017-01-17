@@ -1,0 +1,23 @@
+import sys
+total = raw_input('What is the total amount for your online shipping?')
+country = raw_input('Shipping within the US or Canada?')
+
+if country == "US" :
+    if total <= "50" :
+        print('Shipping cost is $6.00')
+    elif total <= "100":
+        print('Shipping cost is $9.00')
+    elif total <= "150" :
+        print('Shipping cost is $12:00')
+    else:
+        print "Free shipping"
+        
+if country == "CANADA" :
+    if total <= "50" :
+        print('Shipping cost is $8.00')
+    elif total <= "100":
+        print('Shipping cost is $12.00')
+    elif total <= "150" :
+        print('Shipping cost is $15:00')
+    else:
+        print "Free shipping"
