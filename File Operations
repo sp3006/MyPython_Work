@@ -1,0 +1,24 @@
+import sys, os
+
+'''Open the file for write and read
+filehandle = open('/Users/sushantparicharak/pyth/mywork/sample.txt', 'w+')
+for i in range(10):
+    filehandle.write('The inserted line number is %d' %i  )
+'''
+if not filehandle.closed:
+    print('File is still open ,closing it now.')
+    filehandle.close()
+
+#Reading the file
+
+filehandle = open('/Users/sushantparicharak/pyth/mywork/sample.txt', 'r')
+for line in filehandle:
+    print('Now the line is ', line)
+
+if not filehandle.close():
+    print('File is Still open, closing it now.')
+else:
+    print('File is closed')
+
+os.rename('/Users/sushantparicharak/pyth/mywork/sample.txt', '/Users/sushantparicharak/pyth/mywork/sample_python.txt')
+print('Current Working Directory')
